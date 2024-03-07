@@ -159,50 +159,27 @@
        
               <div class="wrapper">
                <section id="section1">
-                <style>
-                  img{
-                    max-width: 100;
-                    max-height: 100;
-                    
-                  }
-
-                  .picture {
-                    width: 200px;
-                    height: 300px;
+               
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Responsive Images</title>
+                  <style>
+                    .item img {
+                      max-width: 100%; /* Ensure images don't exceed their container's width */
+                      height: auto; /* Maintain aspect ratio */
+                    }
                   
-                  }
-                </style>
-                <style>
-                  img{
-                    max-width: 100;
-                    max-height: 100;
-                  }
-                 .picture{
-                width: 200px;
-                height:300px
-              }
-                </style>
-                <style>
-                 img{
-                  max-width: 100%;
-                  max-height: 100;
-                 }
-                 .picture{
-                    width: 200px;
-                    height: 300px;
-                  }
-                </style>
-                <style>
-                  
-                  img{
-                    max-width: 100;
-                    max-width: 100;
-                  }
-                  .picture{
-                    width: 200px;
-                    height: 300px;
-                  }
-                </style>
+                    /* Media query for screens smaller than 576px (typical mobile phones) */
+                    @media (max-width: 575.98px) {
+                      .item img {
+                        /* Adjust image styles for smaller screens */
+                        max-width: 100%;
+                        height: auto;
+                      }
+                    }
+                  </style>
+               <head>            
                 
                  <div class="picture 1">
                   <img src="photo_2024-02-14_01-18-45.jpg" alt="Describe Image"> 
@@ -221,19 +198,9 @@
                  <img src="cvb.gif" alt="Describe Image">
                </div>
                <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images</title>
-    <style>
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-</head>
+               </style>
+               <head>
+
 <body>
     
     
@@ -295,7 +262,7 @@
 
 
 <br>
- CRAFTED WITH LOVE❤️
+ CRAFTED WITH LOVE❤️ 
  <script src="script.js"></script>
 </body>
 
