@@ -186,20 +186,20 @@
                
                        
                 
-                 <div class=".item">
+                 <div class="item">
                   <img src="photo_2024-02-14_01-18-45.jpg" alt="Describe Image"> 
                 </div>
-                 <div class=".item">
+                 <div class="item">
                  <img src="WhatsApp Image 2024-02-14 at 05.22.08_748b0a67.jpg" alt="Describe Image">
                </div>
-               <div class=",item">
+               <div class="item">
                 <img src="WhatsApp Image 2024-02-14 at 05.22.08_56717fe3.jpg" alt="Describe Image">
               </div>
-                 <div class=".item">
+                 <div class="item">
                  <img src="WhatsApp Image 2024-02-14 at 05.22.09_a6d26827.jpg"alt="Describe image">
                </div>
                             
-               <div class=",item">
+               <div class="item">
                  <img src="cvb.gif" alt="Describe Image">
                </div>
                <html lang="en">
@@ -583,17 +583,19 @@
   }
   
   .wrapper {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 100%);
     overflow: hidden;
     scroll-behavior: smooth;
   }
   .wrapper section {
     width: 100%;
+    max-width: fit-content;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin: 20px 0;
+    margin:  0 auto;
+    size-adjust: 300px;
   }
   .wrapper section .item {
     /* width: max-content; */
@@ -627,6 +629,17 @@
     right: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
   }
+  img{
+    width: cover;
+    max-width: 100%;
+    height: cover;
+  }
+    }
+    .wrapper{
+      .artemis-logo-mobile {display: none;}
+      @media screen and [max-width:320px]{.artemis-logo-mobile display: inline block;}
+    }
+
   
   @media only screen and (max-width: 600px) {
     a.arrow__btn {
